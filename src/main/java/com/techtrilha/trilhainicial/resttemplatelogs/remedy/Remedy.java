@@ -5,6 +5,7 @@ public class Remedy {
   private Long id;
   private String name;
   private String description;
+  private String pharmaceuticalId;
 
   public Long getId() {
     return id;
@@ -28,6 +29,14 @@ public class Remedy {
 
   public void setDescription(String description) {
     this.description = description;
+  }
+
+  public String getPharmaceuticalId() {
+    return pharmaceuticalId;
+  }
+
+  public void setPharmaceuticalId(String pharmaceuticalId) {
+    this.pharmaceuticalId = pharmaceuticalId;
   }
 
 }
