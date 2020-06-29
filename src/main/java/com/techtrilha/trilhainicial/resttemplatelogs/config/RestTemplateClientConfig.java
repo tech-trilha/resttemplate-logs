@@ -10,7 +10,9 @@ public class RestTemplateClientConfig {
 
   @Bean
   public RestTemplate getRestTemplate(RestTemplateBuilder builder) {
-    return builder.build();
+    return builder
+        .additionalInterceptors(new RestTemplateErrorInterceptor())
+        .build();
   }
 
 }
